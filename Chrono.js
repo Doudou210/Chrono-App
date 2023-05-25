@@ -87,7 +87,7 @@ $reset.addEventListener('click', function(){
     $split.classList.remove('active');   
     $start.classList.remove('active');
 
-
+    // Pour desactiver certains button
     $reset.setAttribute('disabled', '');
     $stop.setAttribute('disabled', '');
     $start.removeAttribute('disabled');
@@ -95,9 +95,6 @@ $reset.addEventListener('click', function(){
     $body.innerHTML='';
 })
 
-// let a = 0 ;
-// let b = 0 ;
-// let c = 0 ;
 
 $split.addEventListener('click', function(){
     $body.innerHTML+= `<p>${minutes}: ${secondes}. ${millisecondes}</p>`
