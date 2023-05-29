@@ -57,6 +57,7 @@ $start.addEventListener('click',function(){
     $start.classList.add('active');
     $stop.classList.remove('active');
     $split.classList.remove('active');
+    $reset.classList.add('active');
 })
 
 $stop.addEventListener('click', function(){
@@ -84,7 +85,7 @@ $reset.addEventListener('click', function(){
     $min.innerHTML= '0' + minutes;
 
     $reset.classList.add('active');   
-    $split.classList.remove('active');   
+    $split.classList.add('active');   
     $start.classList.remove('active');
 
     // Pour desactiver certains button
@@ -97,5 +98,5 @@ $reset.addEventListener('click', function(){
 
 
 $split.addEventListener('click', function(){
-    $body.innerHTML+= `<p>${minutes}: ${secondes}. ${millisecondes}</p>`
+    $body.innerHTML+= `<form><table><p>${minutes}: ${secondes}. ${millisecondes}</p></form></table>`
 })
