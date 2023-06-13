@@ -21,7 +21,6 @@ $start.addEventListener('click',function(){
         $milli.innerHTML = millisecondes;
 
         if(millisecondes==9){
-            // console.log('ça marche')
             secondes ++;
             $secs.innerHTML = secondes;
             millisecondes = 0;
