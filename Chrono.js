@@ -97,5 +97,5 @@ $reset.addEventListener('click', function(){
 
 
 $split.addEventListener('click', function(){
-    $body.innerHTML+= `<form><table><p>${minutes}: ${secondes}. ${millisecondes}</p></form></table>`
+    $body.innerHTML+= `<p>${minutes}: ${secondes}. ${millisecondes}</p>`
 })

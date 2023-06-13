@@ -8,7 +8,7 @@
     background-color: aquamarine;
     justify-content: center;
     margin: 1em auto;
-    border-radius: 10px;
+    border-radius: 5px;
     font-size: 2em;
     padding: 0.5em;
 }
@@ -25,15 +25,15 @@ form{
 
 .wrapper{
     width: 50%;
+    height: auto;
     padding: 20px;
-    margin-top: 200px;
-    border-radius: 30px;
+    border-radius: 5px;
     border: 2px solid salmon;
     margin: 0 auto;
+    margin-top: 10em;
 
     text-align: center;
     background: navajowhite;
-    height: auto;
 }
 
 .stop{
@@ -41,12 +41,12 @@ form{
     background: red;
     color: whitesmoke;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 
 .start{
     background: green;
-    border-radius: 20px;
+    border-radius: 5px;
     padding: 20px;
     color: antiquewhite;
 }
@@ -54,7 +54,7 @@ form{
 .split{
     background: rgba(217, 217, 217, 0.7);
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 
 .reset{
@@ -62,8 +62,29 @@ form{
     /* display: none; */
     background: gray;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 5px;
 }
-.active{
-    display: none;
+
+.afficheur ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    
+    width: 100%;
+    padding: 1em;
+}
+
+.afficheur ul li{
+    padding: 0.5em;
+}
+
+.is-actived{
+    display: block;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.is-active{
+    background: black;
+    color: white;
 }
