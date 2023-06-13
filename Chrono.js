@@ -99,3 +99,19 @@ $reset.addEventListener('click', function(){
 $split.addEventListener('click', function(){
     $body.innerHTML+= `<p>${minutes}: ${secondes}. ${millisecondes}</p>`
 })
+
+const $affBtn = document.querySelectorAll('.afficheur ');
+const $content = document.querySelectorAll('.contents ');
+
+for(let i=0; i<$affBtn.length; i++){
+    const $active = document.querySelector('.afficheur .is-active');
+    const $activeContent = document.querySelector('.contents .is-active');
+    $affBtn[i].addEventListener('click',()=>{
+
+        $active.classList.toggle('is-active');
+        $activeContent.classList.toggle('is-active');
+        
+        $content[i].classList.toggle('is-active');
+        $affBtn[i].classList.toggle('is-active');
+    })
+}

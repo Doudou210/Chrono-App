@@ -40,20 +40,20 @@ form{
     /* display: none; */
     background: red;
     color: whitesmoke;
-    padding: 20px;
+    padding: 1em;
     border-radius: 5px;
 }
 
 .start{
     background: green;
     border-radius: 5px;
-    padding: 20px;
+    padding: 1em;
     color: antiquewhite;
 }
     
 .split{
     background: rgba(217, 217, 217, 0.7);
-    padding: 20px;
+    padding: 1em;
     border-radius: 5px;
 }
 
@@ -61,30 +61,38 @@ form{
     color: aquamarine;
     /* display: none; */
     background: gray;
-    padding: 20px;
+    padding: 1em;
     border-radius: 5px;
 }
 
-.afficheur ul{
+.afficheur{
     display: flex;
     justify-content: space-evenly;
-    list-style: none;
     
     width: 100%;
-    padding: 1em;
 }
 
-.afficheur ul li{
+.afficheur button{
     padding: 0.5em;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+.active{
+    display: none;
 }
 
-.is-actived{
+.afficheur button.is-active{
+    background: black;
+    color: white;
+}
+
+.contents .content{
+    display: none;
+}
+
+.contents .content.is-actived{
     display: block;
     margin-top: 10px;
     margin-left: 15px;
-}
-
-.is-active{
-    background: black;
-    color: white;
 }
