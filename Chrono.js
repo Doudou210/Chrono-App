@@ -95,23 +95,30 @@ $reset.addEventListener('click', function(){
     $body.innerHTML='';
 })
 
+//Afficher les selections du buttons
 
 $split.addEventListener('click', function(){
     $body.innerHTML+= `<p>${minutes}: ${secondes}. ${millisecondes}</p>`
 })
 
-const $affBtn = document.querySelectorAll('.afficheur ');
-const $content = document.querySelectorAll('.contents ');
+let $affBtn = document.querySelectorAll('.afficheur button');
+let $content = document.querySelectorAll('.contents .content');
+
+let $active = document.querySelector('.afficheur button.is-active');
+let $activeContent = document.querySelector('.contents .content.is-actived');
 
 for(let i=0; i<$affBtn.length; i++){
-    const $active = document.querySelector('.afficheur .is-active');
-    const $activeContent = document.querySelector('.contents .is-active');
-    $affBtn[i].addEventListener('click',()=>{
 
-        $active.classList.toggle('is-active');
-        $activeContent.classList.toggle('is-active');
+    $affBtn[i].addEventListener('click',()=>{
         
-        $content[i].classList.toggle('is-active');
-        $affBtn[i].classList.toggle('is-active');
+        // $active.classList.remove('is-active');
+        $active.removeAttribute("class");
+        // $active.classList.add('actived');
+        $activeContent.classList.remove('is-actived');
+        console.log(i);
+        
+        $content[i].classList.add('is-actived');
+        $affBtn[i].classList.add('is-active');
+
     })
 }
