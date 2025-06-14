@@ -11,7 +11,7 @@ let $body =document.querySelector('.body');
 let millisecondes = 0;
 let secondes = 0;
 let minutes = 0;
-
+j
 let interval;
 
 $start.addEventListener('click',function(){
