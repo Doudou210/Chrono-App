@@ -11,22 +11,64 @@
 <body>
     <div class="wrapper">
         
-        <div class="timer">
-            <p id="minutes">00</p>
-            <p>:</p>
-            <p id="secondes">00</p>
-            <p>.</p>
-            <p id="milliSecondes">00</p>
-        </div>
-        <button class="stop active" disabled>Stop</button>
-        <button class="start">Start</button>
-        <button class="split active">Split</button>
-        <button class="reset active">Reset</button>
+        <div class="afficheur">
         
-        <!-- Pour afficher les résultats -->
-        <div class="body">
-            <!-- <p></p> -->
+            <button class="is-active">Chronomètre</button>
+            <button>Alarme</button>
+            <button>Minuteur</button>
+            <button>Horloge</button>
+            
         </div>
+        <div class="contents">
+            
+            <div class="content is-actived">
+                <div class="timer">
+                    <p id="minutes">00</p>
+                    <p>:</p>
+                    <p id="secondes">00</p>
+                    <p>.</p>
+                    <p id="milliSecondes">00</p>
+                </div>
+                <button class="stop active" disabled>Stop</button>
+                <button class="start">Start</button>
+                <button class="split active">Split</button>
+                <button class="reset active">Reset</button>
+                <table id="resultTable">
+                    <thead>
+                      <tr>
+                        <th>Résultat</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!-- Les données seront insérées ici -->
+                      <div class="body">
+                          <!-- <p></p> -->
+                      </div>
+                    </tbody>
+                  </table>
+                <!-- Pour afficher les résultats -->
+            </div>
+            
+            <div class="content">
+                <h1>Alarme</h1>
+            </div>
+
+            <!-- Minuteur -->
+
+            <div class="content">
+
+                <h1>00:00:00</h1>
+            </div>
+
+            <!-- Horloge -->
+            <div class="content">
+                <h1 id="horloge">
+                    <time>00:00:00</time>
+                </h1>
+            </div>
+            
+        </div>
+
     </div>
     
     <script src="Chrono.js"></script>
